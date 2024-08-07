@@ -30,7 +30,7 @@ export default {
     spacing: {
       1100: "5.5rem",
       500: "2.5rem",
-      400: "1rem",
+      400: "2rem",
       300: "1.5rem",
       200: "1rem",
       150: "0.75rem",
