@@ -2,7 +2,7 @@
 import addToCartIcon from "../assets/icon-add-to-cart.svg";
 import { Add, Subtract } from './index';
 
-const props = defineProps<{ startAdding: boolean }>();
+defineProps<{ startAdding: boolean }>();
 const emits = defineEmits(['start-cart', 'decrement', 'increment']);
 </script>
 <template>

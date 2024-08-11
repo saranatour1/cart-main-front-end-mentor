@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { CartItem } from '../data';
 import { EmptyCart, FullCart } from '.';
-const props = defineProps<{ cartProducts: CartItem[] }>()
+defineProps<{ cartProducts: CartItem[] }>()
 const emits = defineEmits<{ 'pop-item': [name: string] }>()
 const handlePopItem = (name: string) => {
   emits("pop-item", name)

@@ -35,14 +35,14 @@ const increment = () => {
   cartOption.amount++;
 }
 
-watch(cartOption, (newCart, oldCart) => {
+watch(cartOption, (newCart, _oldCart) => {
   if (newCart.amount === 0) {
     cartOption.startAdding = false;
     emits('pop-item',props.item.name)
   }
 })
 
-watch(cartOption,(newAmount, oldAmount)=>{
+watch(cartOption,(newAmount, _oldAmount)=>{
   if(newAmount.amount){
     emits('update-cart',newAmount.amount,props.item.name)
   }

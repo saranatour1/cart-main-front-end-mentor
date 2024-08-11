@@ -3,10 +3,10 @@ import { ref } from "vue";
 import { CartItem } from "../data";
 import { Confirmed, PriceTag, FormattedTag } from ".";
 import { onClickOutside } from '@vueuse/core'
-const props = defineProps<{ products: CartItem[], total: number }>()
+ defineProps<{ products: CartItem[], total: number }>()
 const open = ref(false)
 const target = ref(null)
-onClickOutside(target, event => open.value = false)
+onClickOutside(target, _event => open.value = false)
 </script>
 <template>
   <button @click="open = true"
